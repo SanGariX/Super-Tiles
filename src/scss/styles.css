@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,regular,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Chewy:regular);
+@import url(https://fonts.googleapis.com/css?family=Martel+Sans:200,300,regular,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Lexend:100,200,300,regular,500,600,700,800,900);
+@import './reset.css';
+
+@import './header.css';
+@import './footer.css';
+@import './pages.css';
+
+@import './about.css';
+@import './faq.css';
+@import './how-play.css';
+@import './features.css';
+@import './gallery.css';
+@import './hero.css';
+@import './reviews.css';
+@import './play.css';
+
+@import './cookies.css';
+
+:root {
+  --beyaz: #f0f0f0;
+  --kirmizi: #b11a00;
+  --siyah: #101010;
+  --sari: #efbf2f;
+  --bej: #dbc9b0;
+  --font-family: 'Martel Sans', sans-serif;
+  --second-family: 'Chewy', sans-serif;
+  --third-family: 'Lexend', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.container {
+  max-width: 375px;
+  min-width: 250px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+.section {
+  padding: 40px 0;
+  @media screen and (min-width: 1440px) {
+    padding: 80px 0;
+  }
+}
+.title-h2 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.4;
+  text-align: center;
+  color: var(--kirmizi);
+  margin-bottom: 32px;
+  @media screen and (min-width: 1440px) {
+    font-size: 40px;
+  }
+}
+.title-h3 {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.4;
+  color: var(--siyah);
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 24px;
+    margin-left: 80px;
+  }
+}
+.title-h3.yellow::before {
+  content: '';
+  border-radius: 50%;
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background-color: var(--sari);
+}
+.title-h3.orange::before {
+  content: '';
+  border-radius: 50%;
+  width: 20px;
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  background-color: var(--kirmizi);
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
